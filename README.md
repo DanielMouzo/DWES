@@ -17,11 +17,14 @@
 
 <p>Los ejercicios se organizan en carpetas y están etiquetados de manera clara para facilitar su localización. </p>
 
-<h2>:hammer: Descripción del Proyecto</h2>
+<h2>Descripción del Proyecto</h2>
 
 <p>Este repositorio ha sido creado como parte de la clase de Desarrollo Web en Entorno Servidor y tiene como objetivo proporcionar un espacio centralizado para la gestión de ejercicios asignados por el profesor. Aquí encontrarás una colección de ejercicios relacionados con el desarrollo web en el entorno del servidor.</p>
 
 <p>El propósito principal de este repositorio es permitirte acceder a los ejercicios, revisar las instrucciones proporcionadas y cargar mis soluciones para su revisión por parte del profesor. Los ejercicios están organizados de manera estructurada en carpetas individuales para facilitar la navegación y la gestión.</p>
+
+
+![Desarrollo Web en Entorno Servidor](https://github.com/DanielMouzo/DWES/assets/128789303/b25aaac9-5a6a-4f8c-930e-9cf08b662ffd)
 
 
 <h2>Uso del Repositorio para Estudiantes</h2>
@@ -52,6 +55,9 @@ git push
 
 <p>¡Ahora estás listo para utilizar este repositorio para completar y cargar tus soluciones a los ejercicios de la clase!</p>
 
+## :hammer:Funcionalidades del proyecto
+
+:construction: En Proceso :construction:
 
 <h2>Tecnologías Utilizadas</h2>
 
