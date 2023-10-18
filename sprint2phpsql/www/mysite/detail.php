@@ -33,7 +33,7 @@
 <p>Deja un nuevo comentario:</p>
 <form action="/comment.php" method="post">
 	<textarea rows="4" cols="50" name="new_comment"></textarea><br>
-	<input type="hidden" name="pelicula_id" value="<?php echo $cancion_id; ?>">
+	<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
 	<input type="submit" value="Comentar">
 </form>
 </ul>
