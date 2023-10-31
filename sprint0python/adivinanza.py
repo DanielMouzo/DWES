@@ -34,12 +34,13 @@ for adivinanza in adivinanzas_seleccionadas:
     while not (opcion_correcta or opcion_incorrecta):
         # Imprimimos la pregunta y las opciones de respuesta
         print(adivinanza["pregunta"])
+        # La key se refiere a este caso al valor asociado en el diccionario: "pregunta","opciones" y "respuesta_correcta"
         for key, value in adivinanza["opciones"].items():
             print(f"{key}.{value}")
         # Pedimos al usuario que elija una opción
         opcion = input("Por favor, introduce una opción: ")
         # Comprobamos si la opción elegida es correcta
-        if opcion.upper() == adivinanza["respuesta_correcta"]:
+        if opcion.upper() == adivinanza.get("respuesta_correcta"):
             opcion_correcta = True
             print("Opción Correcta")
             puntuacion += 10
