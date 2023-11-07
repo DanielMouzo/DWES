@@ -4,11 +4,19 @@
 <html>
 	<body>
 	<?php
+	session_start();
+	$user_id_a_insertar = 'NULL';
+
+	// Verificar si el usuario esta logueado
+	if (!empty($_SESSION['user_id'])) {
+		$user_id_a_insertar = $_SESSION['user_id'];
+	}
+
 	$pelicula_id = $_POST['pelicula_id'];
 	$comentario = $_POST['new_comment'];
 
 	$query = "INSERT INTO tComentarios(comentario, usuario_id, pelicula_id)
-	VALUES ('".$comentario."', NULL,".$pelicula_id.")";
+	VALUES ('".$comentario."',".$user_id_a_insertar.",".$pelicula_id.")";
 
 	mysqli_query($db, $query) or die('Error');
 
