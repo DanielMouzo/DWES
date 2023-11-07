@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		mysqli_stmt_execute($stmt_insert);
 		echo "Registro existoso. Redireccionando a la pagina  principal...";
-		header("refresh:3;url=index.php"); // Redirigir despues de 3 segundos
+		header("refresh:3;url=main.php"); // Redirigir despues de 3 segundos
 		exit();
 }
 }
