@@ -36,7 +36,7 @@ $db = mysqli_connect('localhost','root','1234','mysitedb') or die ('Fail');
 
 // Verificar si el usuario esta logueado
 if (!empty($_SESSION['user_id'])) {
-	echo "<p>Bienvenido, Usuario. <a href='logout.php'>Cerrar sesión</a></p>";
+	echo "<p>Bienvenido, Usuario. <a href='cambiarcontraseña.php'>Cambiar contraseña</a> |  <a href='logout.php'>Cerrar sesión</a></p>";
 } else {
 	echo "<p><a href='login.html'>Iniciar sesión</a></p>";
 }
