@@ -1,6 +1,17 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<script>
+		function validarFormulario() {
+			var email = document.getElementsByName("email")[0].value;
+			var password = document.getElementsByName("password")[0].value;
+
+			if (email === "" || password === "") {
+				alert("Por favor, complete los campos");
+				return false;
+			}
+		}
+	</script>
 </head>
 <body>
 	<h1>Iniciar Sesion</h1>

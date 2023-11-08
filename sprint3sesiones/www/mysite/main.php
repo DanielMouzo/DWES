@@ -5,9 +5,26 @@ $db = mysqli_connect('localhost','root','1234','mysitedb') or die ('Fail');
 <html>
 <head>
 	<style>
+		body{
+		        font-family: Arial, sans-serif;
+		}
+
 		img{
 			max-witdth:100px;
 			height:auto;
+			transition: opacity 0.9s ease-in-out;
+		}
+
+		div{
+			margin-bottom: 20px;
+		}
+
+		div:hover img{
+			opacity: 0.7;
+		}
+
+		div:hover{
+			background-color: #f0f0f0;
 		}
 	</style>
 </head>
