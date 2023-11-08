@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die ('Error de conexion');
+	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die ('Error de conexion');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$email = $_POST['email'];
@@ -18,12 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	// Verificar la contraseña
 	if (password_verify($password, $hashed_password)) {
+		session_start();
+		$_SESSION['user_id'] = $row['id'];
 		echo "Inicio de sesión existoso. Redireccionando a la página  principal...";
 		header("refresh:3;url=main.php"); // Redirigir despues de 3 segundos
 		exit();
 	} else {
 		echo "Error: Contraseña incorrecta.";
-	}
+		}
 	} else {
 		echo "Error: El correo electronico no existe.";
 	}

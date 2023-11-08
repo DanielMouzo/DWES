@@ -30,7 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$stmt_insert = mysqli_prepare($db, $insert_query);
 		mysqli_stmt_bind_param($stmt_insert, "ssss", $nombre, $apellidos, $email, $hashed_password);
 
-
 		$nombre = "NombreEjemplo";
 		$apellidos = "ApellidosEjemplo";
 
@@ -40,4 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		exit();
 }
 }
+	
+mysqli_close($db);
 ?>

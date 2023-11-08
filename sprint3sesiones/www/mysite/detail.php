@@ -1,10 +1,20 @@
 <?php
+	session_start();
 	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
 
 <html>
 <body>>
+
 <?php
+
+	// Verificar si el usuario esta logueado
+	if (!empty($_SESSION['user_id'])) {
+		echo "<p>Bienvenido, Usuario. <a href='logout.php'>Cerrar sesion</a></p>";
+	} else {
+		echo "<p><a href='login.html'>Iniciar sesión</a></p>";
+	}
+
 	if (!isset($_GET['pelicula_id'])) {
 		die('No se ha especificado una canción');
 	}
