@@ -10,13 +10,14 @@ $db = mysqli_connect('localhost','root','1234','mysitedb') or die ('Fail');
 		}
 
 		img{
-			max-witdth:100px;
-			height:auto;
+			witdth:250px;
+			height:250px;
 			transition: opacity 0.9s ease-in-out;
 		}
 
 		div{
 			margin-bottom: 20px;
+			overflow: hidden;
 		}
 
 		div:hover img{
